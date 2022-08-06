@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
+import Home from "../src/components/Home/home"
+import Portfolio from "../src/components/Portfolio/portfolio"
+import About from "../src/components/About/about"
+import Navbar from "../src/components/Navbar/navbar"
+
 function App() {
   return (
     <div className="App">
