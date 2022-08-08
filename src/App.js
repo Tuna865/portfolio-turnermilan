@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from "../src/components/Home/home"
 import Portfolio from "../src/components/Portfolio/portfolio"
@@ -23,6 +25,24 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+        <header>
+            <Navbar />
+        </header>
+        <main>
+            <Router>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/about">
+                    <About />
+                </Route>
+                <Route exact path="/portfolio">
+                    <Portfolio />
+                </Route>
+            </Router>
+        </main>
+    </div>
     </div>
   );
 }

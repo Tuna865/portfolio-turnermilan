@@ -1,23 +1,13 @@
 import React from "react"
-import {Link} from "react-router-dom"
 
 import "./about.css"
 import "../site.css"
 
 const About = () => {
 
-
     return (
     <div>
-        <header className="header-name">Turner Milan
-        {/* this needs to get changed to a React style navbar */}
-            <nav className="navbar">
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="index.html">Home</a>
-            </nav>
-        </header>
-        <div>
+        <main>
             <h1>
                 When I'm not at my day job or working on personal projects, 
                 these are a few of my favorite pastimes:
@@ -85,16 +75,16 @@ const About = () => {
                         makes it difficult to watch their matches live.
                     </p>
             </section>
-        </div>
+        </main>
         <footer>
             <a href= "https://www.linkedin.com/in/turner-milan/">
-                <img className= "social-links" src= "Images/LinkedInLogo.png"/> 
+                <img className= "social-links" src= "Images/LinkedInLogo.png" alt="linkedin logo"/> 
             </a>
             <a href= "https://github.com/Tuna865">
-                <img className="social-links" src= "Images/GitHub-Mark.png"/>
+                <img className="social-links" src= "Images/GitHub-Mark.png" alt="github logo"/>
             </a>
             <a href= "https://open.spotify.com/user/1297311412?si=245311b0f2154fca">
-                <img className="social-links" src= "Images/SpotifyLogo.png"/>
+                <img className="social-links" src= "Images/SpotifyLogo.png" alt="spotify logo"/>
             </a>
         </footer>
     </div>
