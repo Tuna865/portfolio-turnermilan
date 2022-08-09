@@ -12,22 +12,22 @@ const navItems = [
 const Navbar = () => {
     
     return(
+                <>
         <nav>
             <h1>Turner Milan</h1>
             <div>
                 {navItems.map((item, index) => {
                     return(
-                        <ul>
                             <li key={index}>
                                 <a className={item.cName} href={item.url}>
                                     {item.title}
                                 </a>
                             </li>
-                        </ul>
                     )
                 })}
             </div>
         </nav>
+        </>
             )
 }
 
