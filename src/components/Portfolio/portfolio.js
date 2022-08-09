@@ -47,17 +47,6 @@ const Portfolio = () => {
                 </p>
             </section>
         </main>
-        <footer>
-            <a href= "https://www.linkedin.com/in/turner-milan/">
-                <img className= "social-links" src= "Images/LinkedInLogo.png" alt="linkedin logo"/> 
-            </a>
-            <a href= "https://github.com/Tuna865">
-                <img className="social-links" src= "Images/GitHub-Mark.png" alt="github logo"/>
-            </a>
-            <a href= "https://open.spotify.com/user/1297311412?si=245311b0f2154fca">
-                <img className="social-links" src= "Images/SpotifyLogo.png" alt="spotify logo"/>
-            </a>
-        </footer>
     </div>
     )
 }
