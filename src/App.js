@@ -1,28 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
 
 import Home from "../src/components/Home/home"
 import Portfolio from "../src/components/Portfolio/portfolio"
 import About from "../src/components/About/about"
-import Navbar from "../src/components/Navbar/navbar"
 
 function App() {
   return (
     <div className="App">
-        <header>
-            <Navbar />
-        </header>
-        <main>
-          <Home />
-          <BrowserRouter>
-              <Routes>
-                <Route path="./components/About/about.js" element={<About/>}/>
-                <Route path="./components/Portfolio/portfolio.js" element={<Portfolio/>}/>
-              </Routes>
-          </BrowserRouter>
-        </main>
+      <Router>
+            <nav>
+              <h1>Turner Milan</h1>
+              <ul className="page-links">
+                  <li>
+                    <Link to="/home">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/portfolio">Portfolio</Link>
+                  </li>
+              </ul>
+            </nav>
+            <Switch>
+              <Route path="/home">
+                <About />
+              </Route>
+              <Route path="/about">
+              </Route>
+            </Switch>
+      </Router>
       <footer>
         <a href= "https://www.linkedin.com/in/turner-milan/">
             <img className= "social-links" src= "https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-icon-png.png" alt="linkedin logo"/> 
