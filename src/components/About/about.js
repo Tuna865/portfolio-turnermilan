@@ -1,20 +1,17 @@
 import React from "react"
-
-import "./about.css"
-import "../site.css"
+import "./about.scss"
 
 const About = () => {
 
     return (
-    <div>
         <main>
             <h1>
                 When I'm not at my day job or working on personal projects, 
                 these are a few of my favorite pastimes:
             </h1>
             <section>
-                <h2>Running</h2>
-                <img className="pics-from-phone" src= "images/Half Marathon Pic.jpg" alt= "half marathon pic"/>
+                <h2>Exercise</h2>
+                {/* <img className="pics-from-phone" src= "images/Half Marathon Pic.jpg" alt= "half marathon pic"/> */}
                     <p>
                         I played soccer growing up, so I have never been a stranger to running. 
                         However, I did not really enjoy it until June of 2021, and it was 3 months later that I 
@@ -36,7 +33,7 @@ const About = () => {
             </section>
             <section>
                 <h2>Music</h2>
-                <img className="pics-from-phone"src= "images/Midland Concert Pic.jpeg" alt= "Midland concert pic"/>
+                {/* <img className="pics-from-phone"src= "images/Midland Concert Pic.jpeg" alt= "Midland concert pic"/> */}
                     <p>
                         During the COVID-19 pandemic I realized I thoroughly enjoyed discovering new music; I began 
                         sharing it with my friends and others whenever possible.
@@ -56,7 +53,7 @@ const About = () => {
             </section>
             <section>
                 <h2>Sports</h2>
-                <img className="pics-from-phone"src= "images/Ole Miss Game pic.jpg" alt= "Ole Miss game pic"/>
+                {/* <img className="pics-from-phone"src= "images/Ole Miss Game pic.jpg" alt= "Ole Miss game pic"/> */}
                     <p>
                         I was raised by a family of Tennessee Volunteer fans, so I have been a 
                         fan of the Vols since I was a toddler. As I grew older I became a fan of 
@@ -76,8 +73,6 @@ const About = () => {
                     </p>
             </section>
         </main>
-    </div>
-    
     )
 };
 

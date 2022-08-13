@@ -1,0 +1,26 @@
+footer {
+    box-sizing: border-box;
+    position: fixed;
+    padding: 16px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px -2px black;
+    background-color: lightgray;
+  }
+  footer .social-links{
+    height: 30px;
+  }
+  nav {
+    font-size: 1rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 1em 1em;
+    box-shadow: 0 2px 4px -2px black;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+  }
